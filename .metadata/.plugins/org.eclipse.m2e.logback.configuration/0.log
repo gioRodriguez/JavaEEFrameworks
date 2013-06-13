@@ -1,0 +1,164 @@
+2013-06-13 17:34:49,633 [Worker-0] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updating index for repository: central|http://repo.maven.apache.org/maven2
+2013-06-13 17:34:50,032 [Worker-0] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 4
+2013-06-13 17:34:58,328 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-wtp does not contain lifecycle mapping metadata
+2013-06-13 17:34:58,334 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-egit does not contain lifecycle mapping metadata
+2013-06-13 17:34:58,343 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subversive does not contain lifecycle mapping metadata
+2013-06-13 17:34:58,348 [ModalContext] WARN  o.e.m.i.discovery.MavenDiscovery - CatalogItem org.eclipse.m2e.discovery.lifecyclemapping.m2e-subclipse does not contain lifecycle mapping metadata
+2013-06-13 17:35:15,653 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:35:16,043 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:16,304 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:16,390 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:16,729 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:22,171 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebII/src/main/java
+2013-06-13 17:35:22,172 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /WebII/src/main/resources
+2013-06-13 17:35:22,173 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebII/src/test/java
+2013-06-13 17:35:22,577 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Web/src/main/java
+2013-06-13 17:35:22,577 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Web/src/main/resources
+2013-06-13 17:35:22,579 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Web/src/test/java
+2013-06-13 17:35:22,841 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BusinessLayer/src/main/java
+2013-06-13 17:35:22,842 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BusinessLayer/src/main/resources
+2013-06-13 17:35:22,842 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BusinessLayer/src/test/java
+2013-06-13 17:35:22,843 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BusinessLayer/src/test/resources
+2013-06-13 17:35:22,976 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DataLayer/src/main/java
+2013-06-13 17:35:22,976 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DataLayer/src/main/resources
+2013-06-13 17:35:22,977 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DataLayer/src/test/java
+2013-06-13 17:35:22,977 [Worker-6] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DataLayer/src/test/resources
+2013-06-13 17:35:23,276 [Worker-6] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Project import completed 18 sec
+2013-06-13 17:35:25,419 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-06-13 17:35:25,420 [Worker-9] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2013-06-13 17:35:26,547 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:27,371 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:35:27,470 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:27,513 [Worker-5] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:27,661 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:27,725 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:27,729 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:27,734 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:28,074 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:28,206 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:28,211 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:28,214 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:28,219 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:29,104 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:29,242 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:35:29,299 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:29,531 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:29,977 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:30,049 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:30,176 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:30,430 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:31,411 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:31,686 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:32,165 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:32,173 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2013-06-13 17:35:32,463 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:32,469 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\src\test\resources
+2013-06-13 17:35:32,599 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:33,500 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:33,541 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-06-13 17:35:33,585 [Worker-6] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:33,589 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\src\test\resources
+2013-06-13 17:35:33,732 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:35:33,833 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:33,894 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:34,072 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:34,302 [Worker-6] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:36,161 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,169 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,171 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,185 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,253 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,259 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,261 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,266 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,267 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:36,283 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,288 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,290 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,295 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\src\test\resources
+2013-06-13 17:35:36,314 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,358 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:36,365 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:36,375 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\src\test\resources
+2013-06-13 17:35:36,470 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:35:36,558 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:36,940 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:37,072 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:37,126 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:35:37,204 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:35:37,326 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:35:37,658 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:35:39,360 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,366 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,368 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,374 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,647 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,652 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,654 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,663 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,823 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,831 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,833 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,838 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\src\test\resources
+2013-06-13 17:35:39,851 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,856 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:35:39,858 [Worker-3] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:35:39,863 [Worker-3] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\src\test\resources
+2013-06-13 17:36:09,794 [Worker-0] INFO  o.e.m.c.i.i.nexus.NexusIndexManager - Updated index for repository: central|http://repo.maven.apache.org/maven2 in 80170 ms
+2013-06-13 17:36:22,703 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,729 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,731 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,735 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,742 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,748 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,754 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,758 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,768 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,772 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,774 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,778 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\src\test\resources
+2013-06-13 17:36:22,787 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,792 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:22,796 [Worker-4] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:22,800 [Worker-4] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\src\test\resources
+2013-06-13 17:36:31,732 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-06-13 17:36:31,867 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WhatTimeIsIt:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\pom.xml.
+2013-06-13 17:36:31,937 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:36:32,231 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:36:32,284 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:36:32,438 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:36:32,808 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:BusinessLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\BusinessLayer\pom.xml.
+2013-06-13 17:36:32,918 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:DataLayer:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\DataLayer\pom.xml.
+2013-06-13 17:36:33,028 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:WebII:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\pom.xml.
+2013-06-13 17:36:33,253 [Worker-3] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.tecgurus.whattimeisit:Web:1.0 @ C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\pom.xml.
+2013-06-13 17:36:33,494 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BusinessLayer/src/main/java
+2013-06-13 17:36:33,494 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BusinessLayer/src/main/resources
+2013-06-13 17:36:33,495 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /BusinessLayer/src/test/java
+2013-06-13 17:36:33,495 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /BusinessLayer/src/test/resources
+2013-06-13 17:36:33,563 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DataLayer/src/main/java
+2013-06-13 17:36:33,564 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DataLayer/src/main/resources
+2013-06-13 17:36:33,564 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /DataLayer/src/test/java
+2013-06-13 17:36:33,564 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /DataLayer/src/test/resources
+2013-06-13 17:36:33,622 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebII/src/main/java
+2013-06-13 17:36:33,622 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /WebII/src/main/resources
+2013-06-13 17:36:33,623 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /WebII/src/test/java
+2013-06-13 17:36:33,723 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Web/src/main/java
+2013-06-13 17:36:33,728 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /Web/src/main/resources
+2013-06-13 17:36:33,729 [Worker-3] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Web/src/test/java
+2013-06-13 17:36:33,838 [Worker-3] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 2 sec
+2013-06-13 17:36:34,126 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,132 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:34,138 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,145 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:34,160 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,165 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:34,168 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,174 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-06-13 17:36:34,320 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,330 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2013-06-13 17:36:34,335 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,341 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\Web\src\test\resources
+2013-06-13 17:36:34,354 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,364 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-06-13 17:36:34,367 [Worker-0] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-06-13 17:36:34,372 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\sandbox\JavaEEFrameworks\WhatTimeIsIt\WebII\src\test\resources
