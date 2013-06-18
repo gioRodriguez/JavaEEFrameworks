@@ -4,5 +4,10 @@
 	"http://struts.apache.org/dtds/struts-2.3.dtd">
 <struts>
 	<package name="helloworld" namespace="/holamundo" extends="struts-default">
+
+		<action name="HolaATodos" class="com.tecgurus.whattimeisit.webii.actions.HelloWorldAction">
+			<result name="success">/helloworld/index.jsp</result>
+		</action>
+
 	</package>
 </struts>
