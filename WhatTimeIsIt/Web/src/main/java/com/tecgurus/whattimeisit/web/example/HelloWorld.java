@@ -21,11 +21,15 @@
 
 package com.tecgurus.whattimeisit.web.example;
 
+import com.tecgurus.whattimeisit.web.models.HolaMundoModel;
+
 /**
  * <code>Set welcome message.</code>
  */
 public class HelloWorld extends ExampleSupport {
 
+	private HolaMundoModel holaMundoModel;
+	
     public String execute() throws Exception {
         setMessage(getText(MESSAGE));
         return SUCCESS;
@@ -58,4 +62,12 @@ public class HelloWorld extends ExampleSupport {
     public void setMessage(String message) {
         this.message = message;
     }
+
+	public HolaMundoModel getHolaMundoModel() {
+		return holaMundoModel;
+	}
+
+	public void setHolaMundoModel(HolaMundoModel holaMundoModel) {
+		this.holaMundoModel = holaMundoModel;
+	}
 }

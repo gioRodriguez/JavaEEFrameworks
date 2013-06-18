@@ -10,7 +10,7 @@
 
   <package name="example" namespace="/example" extends="struts-default">
     
-    <action name="HelloWorld" class="com.tecgurus.whattimeisit.web.example.HelloWorld">
+    <action name="HelloWorld" class="HelloWorld">
       <result>/example/HelloWorld.jsp</result>
     </action>
 
