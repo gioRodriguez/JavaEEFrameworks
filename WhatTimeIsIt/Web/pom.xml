@@ -6,9 +6,8 @@
         <groupId>com.tecgurus.whattimeisit</groupId>
         <version>1.0</version>
     </parent>
-    <groupId>com.tecgurus.whattimeisit</groupId>
-    <artifactId>Web</artifactId>
-    <version>1.0</version>
+    
+    <artifactId>Web</artifactId>    
     <packaging>war</packaging>
     <name>Web</name>
 

@@ -3,14 +3,14 @@
 
 <%@ taglib prefix="s" uri="/struts-tags"%>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-
+	
 	<s:form action="/holamundo/HolaATodos.action" method="post">
 		Mayor?: <s:checkbox name="mayor" />		
 		Nombre: <s:textfield name="nombre" />
@@ -20,7 +20,7 @@
 					multiple="true"/>
 
 		Nombre padre: <s:textfield name="padreModel.nombrePadre"/>
-		
+				
 		<s:iterator value="padreModel.hijosModel" status="hijoStat" var="hijo">
 			Nombre hijo: <s:textfield name="padreModel.hijosModel[%{#hijoStat.count-1}].nombreHijo"/>
 		</s:iterator>							
@@ -47,8 +47,8 @@
 				<li>Nombre hijo: <s:property value="nombreHijo"/></li>
 			</s:iterator>			
 			
-			<li>Caracteres nombre hijo: <s:property value="padreModel.hijoModel.nombreHijo.length()"/></li>
-			
+			<li>Caracteres nombre hijo: <s:property value="padreModel.hijosModel[0].nombreHijo.length()"/></li>
+						
 			<s:if test="'Chocolate' in sabores">
 				<li> <a href="#">Compra un pastel de <s:property value="sabores"/> </a> </li>				
 			</s:if>			

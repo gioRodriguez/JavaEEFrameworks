@@ -13,22 +13,22 @@ public class HelloWorldAction implements ModelDriven {
 
 	public HelloWorldAction() {
 		this.helloWorldModel = new HelloWorldModel();
-		
-		////creado padre e hijos
+
+		// //creado padre e hijos
 		PadreModel padreModel = new PadreModel();
 		HijoModel hijoModel = new HijoModel();
 		HijoModel hijoModel2 = new HijoModel();
 		HijoModel hijoModel3 = new HijoModel();
-		
-		////Creando y llenando lista de hijos
-		List<HijoModel> hijos = new ArrayList<HijoModel>();		
+
+		// //Creando y llenando lista de hijos
+		List<HijoModel> hijos = new ArrayList<HijoModel>();
 		hijos.add(hijoModel);
 		hijos.add(hijoModel2);
 		hijos.add(hijoModel3);
-		
-		////Entregando hijos a padre
+
+		// //Entregando hijos a padre
 		padreModel.setHijosModel(hijos);
-		
+
 		this.helloWorldModel.setPadreModel(padreModel);
 	}
 
