@@ -19,5 +19,10 @@
 			<artifactId>data-layer</artifactId>
 			<version>1.0</version>
 		</dependency>
+		<dependency>
+			<groupId>com.tecgurus.whattimeisit</groupId>
+			<artifactId>business-entities</artifactId>
+			<version>1.0</version>
+		</dependency>
 	</dependencies>
 </project>

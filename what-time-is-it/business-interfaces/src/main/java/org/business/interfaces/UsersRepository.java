@@ -1,6 +1,9 @@
-package com.tecgurus.whattimeisit.datalayer;
+package org.business.interfaces;
 
 import java.util.List;
+
+import org.business.entities.User;
+
 
 public interface UsersRepository {
 

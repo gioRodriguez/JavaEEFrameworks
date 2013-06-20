@@ -3,8 +3,9 @@ package com.tecgurus.whattimeisit.webii.actions;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.tecgurus.whattimeisit.businesslayer.UsersRepository;
-import com.tecgurus.whattimeisit.datalayer.User;
+import org.business.entities.User;
+import org.business.interfaces.UsersRepository;
+
 import com.tecgurus.whattimeisit.webii.models.UserListModel;
 import com.tecgurus.whattimeisit.webii.models.UserModel;
 

@@ -2,10 +2,10 @@ package com.tecgurus.whattimeisit.datalayer.impl;
 
 import java.util.List;
 
+import org.business.entities.User;
+import org.data.interfaces.UsersRepository;
 import org.springframework.stereotype.Repository;
 
-import com.tecgurus.whattimeisit.datalayer.User;
-import com.tecgurus.whattimeisit.datalayer.UsersRepository;
 
 @Repository("datalayer-userRepository")
 public class UserRepositoryImpl implements UsersRepository {

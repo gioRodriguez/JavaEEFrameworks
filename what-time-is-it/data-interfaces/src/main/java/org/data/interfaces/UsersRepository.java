@@ -1,8 +1,8 @@
-package com.tecgurus.whattimeisit.businesslayer;
+package org.data.interfaces;
 
 import java.util.List;
 
-import com.tecgurus.whattimeisit.datalayer.User;
+import org.business.entities.User;
 
 public interface UsersRepository {
 

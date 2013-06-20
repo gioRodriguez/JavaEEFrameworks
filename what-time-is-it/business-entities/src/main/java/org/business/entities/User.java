@@ -1,4 +1,4 @@
-package com.tecgurus.whattimeisit.datalayer;
+package org.business.entities;
 
 public class User {
 	private String userName;
