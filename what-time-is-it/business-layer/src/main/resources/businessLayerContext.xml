@@ -7,5 +7,5 @@
 
 	<import resource="classpath:dataLayerContext.xml"/>
 
-	<context:component-scan base-package="com.tecgurus.whattimeisit.businesslayer.impl"></context:component-scan>
+	<context:component-scan base-package="com.tecgurus.whattimeisit.business.layer"></context:component-scan>
 </beans>

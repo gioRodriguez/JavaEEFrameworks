@@ -3,13 +3,13 @@ package com.tecgurus.whattimeisit.webii.actions;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.business.entities.User;
-import org.business.interfaces.UsersRepository;
-
+import com.opensymphony.xwork2.ModelDriven;
+import com.tecgurus.whattimeisit.business.entities.User;
+import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
 import com.tecgurus.whattimeisit.webii.models.UserListModel;
 import com.tecgurus.whattimeisit.webii.models.UserModel;
 
-public class UserListAction {
+public class UserListAction implements ModelDriven {
 
 	private UsersRepository usersRepository;
 
@@ -52,5 +52,10 @@ public class UserListAction {
 
 	public void setUserListModel(UserListModel userListModel) {
 		this.userListModel = userListModel;
+	}
+
+	@Override
+	public Object getModel() {
+		return this.userListModel;
 	}
 }

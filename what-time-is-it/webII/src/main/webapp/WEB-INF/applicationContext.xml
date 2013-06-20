@@ -9,7 +9,7 @@
 	<bean 
 		id="userListAction" 
 		class="com.tecgurus.whattimeisit.webii.actions.UserListAction">
-			<property name="usersRepository" ref="userRepository"></property>
+			<property name="usersRepository" ref="businesslayer-userRepository"></property>
 	</bean>
 
 </beans>
