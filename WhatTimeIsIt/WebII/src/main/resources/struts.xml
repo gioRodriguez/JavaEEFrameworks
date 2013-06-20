@@ -10,4 +10,12 @@
 		</action>
 
 	</package>
+	
+	<package name="users" namespace="/users" extends="struts-default">
+	
+		<action name="getUserList" class="userListAction">
+			<result>/users/index.jsp</result>
+		</action>
+	
+	</package>
 </struts>

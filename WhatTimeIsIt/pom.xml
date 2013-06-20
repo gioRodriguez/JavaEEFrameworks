@@ -8,10 +8,10 @@
 	<packaging>pom</packaging>
 	<name>WhatTimeIsIt</name>
 	<modules>
-		<module>DataLayer</module>
-		<module>BusinessLayer</module>
-		<module>Web</module>
-		<module>WebII</module>
+		<module>data-layer</module>
+		<module>business-layer</module>
+		<module>web</module>
+		<module>webII</module>
 	</modules>
 
 	<dependencies>
