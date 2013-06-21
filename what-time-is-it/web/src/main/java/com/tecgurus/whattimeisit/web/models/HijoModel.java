@@ -1,7 +1,6 @@
-package com.tecgurus.whattimeisit.webii.models;
+package com.tecgurus.whattimeisit.web.models;
 
 public class HijoModel {
-	private static HijoModel instance;
 	
 	private String nombreHijo;
 	

@@ -7,9 +7,9 @@
     <artifactId>what-time-is-it</artifactId>
     <version>1.0</version>
   </parent>
-  <groupId>com.tecgurus.whattimeisit</groupId>
+  
   <artifactId>business-entities</artifactId>
-  <version>1.0</version>
+  
   <name>business-entities</name>
   <url>http://maven.apache.org</url>
   <properties>

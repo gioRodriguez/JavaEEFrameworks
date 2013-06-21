@@ -7,10 +7,8 @@
   - of how to break up the configuration file into multiple files.
 -->
 <struts>
-
   <package name="example" namespace="/example" extends="struts-default">
-    
-    <action name="HelloWorld" class="HelloWorld">
+    <action name="HelloWorld" class="com.tecgurus.whattimeisit.web.example.HelloWorld">
       <result>/example/HelloWorld.jsp</result>
     </action>
 

@@ -1,11 +1,14 @@
-package com.tecgurus.whattimeisit.webii.actions;
+package com.tecgurus.whattimeisit.web.actions;
 
+import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
-import com.tecgurus.whattimeisit.webii.models.UserModel;
+import com.tecgurus.whattimeisit.web.models.UserModel;
 
-public class AddUserAction implements ModelDriven {
+public class AddUserAction extends ActionSupport implements ModelDriven<UserModel> {
+
+	private static final long serialVersionUID = 1L;
 
 	private UserModel userModel;
 	
@@ -23,11 +26,11 @@ public class AddUserAction implements ModelDriven {
 		
 		this.usersRepository.addUser(newUser);
 		
-		return "success";
+		return SUCCESS;
 	}
 	
 	@Override
-	public Object getModel() {
+	public UserModel getModel() {
 		return this.userModel;
 	}
 

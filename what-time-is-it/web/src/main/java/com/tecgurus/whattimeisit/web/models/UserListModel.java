@@ -1,4 +1,4 @@
-package com.tecgurus.whattimeisit.webii.models;
+package com.tecgurus.whattimeisit.web.models;
 
 import java.util.List;
 

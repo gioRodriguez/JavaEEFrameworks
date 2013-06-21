@@ -21,12 +21,11 @@
 
 package com.tecgurus.whattimeisit.web.example;
 
-
 /**
  * <code>Set welcome message.</code>
  */
 public class HelloWorld extends ExampleSupport {
-	
+
     public String execute() throws Exception {
         setMessage(getText(MESSAGE));
         return SUCCESS;
