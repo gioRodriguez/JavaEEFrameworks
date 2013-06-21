@@ -16,6 +16,10 @@
 		<action name="getUserList" class="userListAction">
 			<result>/users/index.jsp</result>
 		</action>
+		
+		<action name="addUser" class="addUserAction">
+			<result>/users/addUser.jsp</result>
+		</action>
 	
 	</package>
 </struts>

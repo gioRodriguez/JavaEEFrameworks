@@ -11,6 +11,7 @@ import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
 @Repository("businesslayer-userRepository")
 public class UserReporitoryImpl implements UsersRepository {
 		
+	@Autowired
 	private com.tecgurus.whattimeisit.data.interfaces.UsersRepository usersRepository;
 	
 	@Autowired
@@ -23,6 +24,20 @@ public class UserReporitoryImpl implements UsersRepository {
 	public List<User> getUserList() {
 		
 		return this.usersRepository.getUserList();
+	}
+
+	@Override
+	public int addUser(User user) {
+		////TODO: verificar si el usuario en session tiene
+		////permisos de aniadir nuevos usuarios
+		
+		////Validar el user para no romper la BD
+		
+		////Grabar en la bitacora que se ha agregado
+		////un nuevo usuario
+		
+		////TODO: Validar si el usario ya esta registrado
+		return this.usersRepository.addUser(user);
 	}
 
 }

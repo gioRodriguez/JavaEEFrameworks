@@ -2,6 +2,8 @@ package com.tecgurus.whattimeisit.business.entities;
 
 public class User {
 	private String userName;
+	
+	private String userEmail;
 
 	public String getUserName() {
 		return userName;
@@ -9,5 +11,13 @@ public class User {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserEmail() {
+		return userEmail;
+	}
+
+	public void setUserEmail(String userEmail) {
+		this.userEmail = userEmail;
 	}
 }
