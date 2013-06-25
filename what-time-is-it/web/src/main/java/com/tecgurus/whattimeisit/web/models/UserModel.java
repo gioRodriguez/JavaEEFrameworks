@@ -1,16 +1,28 @@
 package com.tecgurus.whattimeisit.web.models;
 
 public class UserModel {
-	private String userName;
+	private int userId;
+	
+	private String userFirstName;
+	
+	private String userLastName;
 	
 	private String userEmail;
 
-	public String getUserName() {
-		return userName;
+	public String getUserFirstName() {
+		return userFirstName;
 	}
 
-	public void setUserName(String userName) {
-		this.userName = userName;
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
+	}
+
+	public String getUserLastName() {
+		return userLastName;
+	}
+
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
 	}
 
 	public String getUserEmail() {
@@ -19,5 +31,13 @@ public class UserModel {
 
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
+	}
+
+	public int getUserId() {
+		return userId;
+	}
+
+	public void setUserId(int userId) {
+		this.userId = userId;
 	}	
 }

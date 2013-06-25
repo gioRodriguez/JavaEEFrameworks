@@ -15,7 +15,8 @@
 		</action>
 
 		<action name="addUser" class="addUserAction">
-			<result>/users/addUser.jsp</result>
+			<result name="success">/users/addUserSuccess.jsp</result>
+			<result name="input">/users/addUser.jsp</result>
 		</action>
 	</package>
 

@@ -43,6 +43,7 @@ public class UserRepositoryImpl implements UsersRepository {
 
 	@Override
 	public int addUser(User user) {
+		//TODO: replace Fake
 		this.dataBase.add(user);
 		return 1;
 	}

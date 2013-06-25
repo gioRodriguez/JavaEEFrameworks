@@ -6,11 +6,11 @@
 
 	<import resource="classpath:businessLayerContext.xml" />
 
-	<bean id="userListAction" class="com.tecgurus.whattimeisit.web.actions.UserListAction">
+	<bean id="userListAction" class="com.tecgurus.whattimeisit.web.actions.UserListAction" scope="prototype">
 		<property name="usersRepository" ref="businesslayer-userRepository"></property>
 	</bean>
 
-	<bean id="addUserAction" class="com.tecgurus.whattimeisit.web.actions.AddUserAction">
+	<bean id="addUserAction" class="com.tecgurus.whattimeisit.web.actions.AddUserAction" scope="prototype">
 		<property name="usersRepository" ref="businesslayer-userRepository"></property>
 	</bean>
 

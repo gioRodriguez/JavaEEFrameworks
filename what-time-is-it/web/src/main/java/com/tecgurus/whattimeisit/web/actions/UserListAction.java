@@ -3,18 +3,14 @@ package com.tecgurus.whattimeisit.web.actions;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.tecgurus.whattimeisit.business.entities.User;
-import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
 import com.tecgurus.whattimeisit.web.models.UserListModel;
 import com.tecgurus.whattimeisit.web.models.UserModel;
 
-public class UserListAction extends ActionSupport implements ModelDriven<UserListModel> {
+public class UserListAction extends Action implements ModelDriven<UserListModel> {
 
 	private static final long serialVersionUID = 1L;
-
-	private UsersRepository usersRepository;
 
 	private UserListModel userListModel;
 
@@ -31,7 +27,7 @@ public class UserListAction extends ActionSupport implements ModelDriven<UserLis
 		////convertir User --> UserModel
 		for (User user : userList) {
 			UserModel userModel = new UserModel();
-			userModel.setUserName(user.getUserName());
+			userModel.setUserFirstName(user.getUserName());			
 			
 			userModelList.add(userModel);
 		}
@@ -39,14 +35,6 @@ public class UserListAction extends ActionSupport implements ModelDriven<UserLis
 		this.userListModel.setUserList(userModelList);
 		
 		return SUCCESS;
-	}
-
-	public UsersRepository getUsersRepository() {
-		return usersRepository;
-	}
-
-	public void setUsersRepository(UsersRepository usersRepository) {
-		this.usersRepository = usersRepository;
 	}
 
 	public UserListModel getUserListModel() {
