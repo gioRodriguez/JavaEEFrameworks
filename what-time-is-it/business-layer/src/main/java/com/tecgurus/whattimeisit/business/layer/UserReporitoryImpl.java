@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
@@ -27,6 +28,7 @@ public class UserReporitoryImpl implements UsersRepository {
 	}
 
 	@Override
+	@Transactional(rollbackFor = Exception.class)
 	public int addUser(User user) {
 		////TODO: verificar si el usuario en session tiene
 		////permisos de aniadir nuevos usuarios
@@ -38,6 +40,6 @@ public class UserReporitoryImpl implements UsersRepository {
 		
 		////TODO: Validar si el usario ya esta registrado
 		return this.usersRepository.addUser(user);
-	}
+	}	
 
 }

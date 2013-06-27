@@ -13,7 +13,7 @@
 
 <s:form method="post">
 	
-	<s:textfield name="userFirstName" label="Nombre de usuario"/>
+	<s:textfield name="userFirstName" label="Nombre de usuario" />
 		
 	<s:textfield name="userEmail" label="Email de usuario"/>
 	
