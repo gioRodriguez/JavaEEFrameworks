@@ -3,17 +3,26 @@ package com.tecgurus.whattimeisit.data.layer;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.hibernate.Criteria;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.data.interfaces.UsersRepository;
+import com.tecgurus.whattimeisit.data.layer.model.Banco;
 
 @Repository("datalayer-userRepository")
 public class UserRepositoryImpl implements UsersRepository {
 	
+	private final SessionFactory sessionFactory;
+	
 	private List<User> dataBase;
 	
-	public UserRepositoryImpl(){
+	@Autowired
+	public UserRepositoryImpl(SessionFactory sessionFactory){
+		this.sessionFactory = sessionFactory;
+		
 		this.dataBase = new ArrayList<User>();
 		
 		User user1 = new User();
@@ -38,12 +47,14 @@ public class UserRepositoryImpl implements UsersRepository {
 	@Override
 	public List<User> getUserList() {
 		// TODO aqui deberia ir la BD: remove fake impl
+		
 		return this.dataBase;
 	}
 
 	@Override
 	public int addUser(User user) {
 		//TODO: replace Fake
+		
 		this.dataBase.add(user);
 		return 1;
 	}

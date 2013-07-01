@@ -1,0 +1,17 @@
+@CHARSET "ISO-8859-1";
+
+div li:hover {
+	background: red;
+}
+
+li:FIRST-CHILD {
+	font-weight: bold;
+}
+
+li[data-artista*=Jose] {
+	font-style: italic;
+}
+
+div:FIRST-LETTER {
+	font-size: 3em;
+}
