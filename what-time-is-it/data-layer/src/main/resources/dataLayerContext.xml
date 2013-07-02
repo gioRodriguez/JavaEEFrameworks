@@ -36,7 +36,7 @@
 		<property name="packagesToScan" value="com.tecgurus.whattimeisit.data.layer.model" />
 		<property name="hibernateProperties">
 			<props>
-				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.dialect">org.hibernate.dialect.SQLServerDialect</prop>
 				<prop key="hibernate.default_catalog">tecgurus_rds</prop>
 				<prop key="hibernate.show_sql">true</prop>
 			</props>

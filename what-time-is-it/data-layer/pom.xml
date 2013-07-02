@@ -32,6 +32,7 @@
 			<artifactId>business-entities</artifactId>
 			<version>1.0</version>
 		</dependency>
+		
 		<dependency>
 			<groupId>com.tecgurus.whattimeisit</groupId>
 			<artifactId>data-interfaces</artifactId>
@@ -57,18 +58,21 @@
 			<version>5.0.1.Final</version>
 		</dependency>
 
+		<!-- support database connection -->
 		<dependency>
 			<groupId>commons-dbcp</groupId>
 			<artifactId>commons-dbcp</artifactId>
 			<version>20030825.184428</version>
 		</dependency>
 
+		<!-- support lib for connections pool -->
 		<dependency>
 			<groupId>commons-pool</groupId>
 			<artifactId>commons-pool</artifactId>
 			<version>20030825.183949</version>
 		</dependency>
 
+		<!-- mysql drive -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>

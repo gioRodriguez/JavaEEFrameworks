@@ -1,6 +1,6 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 12:54:47 AM by Hibernate Tools 4.0.0
+// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
 
 import java.util.HashSet;
 import java.util.Set;

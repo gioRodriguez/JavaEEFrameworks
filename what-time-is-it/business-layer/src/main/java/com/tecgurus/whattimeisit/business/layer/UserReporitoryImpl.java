@@ -22,7 +22,7 @@ public class UserReporitoryImpl implements UsersRepository {
 	}
 	
 	@Override
-	@Transactional(rollbackFor = Exception.class)
+	@Transactional(readOnly = true, rollbackFor = Exception.class)
 	public List<User> getUserList() {
 		
 		return this.usersRepository.getUserList();

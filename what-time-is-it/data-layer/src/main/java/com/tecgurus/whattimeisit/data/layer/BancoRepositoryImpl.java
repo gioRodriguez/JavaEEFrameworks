@@ -20,8 +20,8 @@ public class BancoRepositoryImpl {
 	}
 
 	public List<Banco> getBancosList() {
-		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(
-				Banco.class);
+		Criteria criteria = sessionFactory.getCurrentSession()
+				.createCriteria(Banco.class);
 		
 		return criteria.list();
 	}
