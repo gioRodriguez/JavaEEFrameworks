@@ -3,12 +3,18 @@ package com.tecgurus.whattimeisit.web.actions;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.apache.struts2.convention.annotation.Action;
+import org.apache.struts2.convention.annotation.Namespace;
+import org.apache.struts2.convention.annotation.Result;
+
 import com.opensymphony.xwork2.ModelDriven;
 import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.web.models.UserListModel;
 import com.tecgurus.whattimeisit.web.models.UserModel;
 
-public class UserListAction extends Action implements ModelDriven<UserListModel> {
+
+@Namespace("/user")
+public class UserListAction extends ActionBase implements ModelDriven<UserListModel> {
 
 	private static final long serialVersionUID = 1L;
 
@@ -18,6 +24,8 @@ public class UserListAction extends Action implements ModelDriven<UserListModel>
 		this.userListModel = new UserListModel();
 	}
 
+	@Action(value = "/list", 
+			results = @Result(location = "/user/list.jsp"))
 	public String execute() {
 		List<User> userList = this.usersRepository.getUserList();
 
@@ -27,7 +35,8 @@ public class UserListAction extends Action implements ModelDriven<UserListModel>
 		////convertir User --> UserModel
 		for (User user : userList) {
 			UserModel userModel = new UserModel();
-			userModel.setUserFirstName(user.getUserName());			
+			userModel.setUserFirstName(user.getUserName());
+			userModel.setUserEmail(user.getUserEmail());
 			
 			userModelList.add(userModel);
 		}
@@ -35,7 +44,7 @@ public class UserListAction extends Action implements ModelDriven<UserListModel>
 		this.userListModel.setUserList(userModelList);
 		
 		return SUCCESS;
-	}
+	}		
 
 	public UserListModel getUserListModel() {
 		return userListModel;

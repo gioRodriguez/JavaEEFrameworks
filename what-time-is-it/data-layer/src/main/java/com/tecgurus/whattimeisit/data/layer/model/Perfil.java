@@ -1,6 +1,6 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
+// Generated Jul 3, 2013 8:59:44 PM by Hibernate Tools 4.0.0
 
 import java.util.HashSet;
 import java.util.Set;
@@ -21,6 +21,7 @@ import javax.persistence.Table;
 public class Perfil implements java.io.Serializable {
 
 	private Integer idPerfil;
+	private String email;
 	private String nombre;
 	private Set<Login> logins = new HashSet<Login>(0);
 
@@ -31,7 +32,8 @@ public class Perfil implements java.io.Serializable {
 		this.nombre = nombre;
 	}
 
-	public Perfil(String nombre, Set<Login> logins) {
+	public Perfil(String email, String nombre, Set<Login> logins) {
+		this.email = email;
 		this.nombre = nombre;
 		this.logins = logins;
 	}
@@ -45,6 +47,15 @@ public class Perfil implements java.io.Serializable {
 
 	public void setIdPerfil(Integer idPerfil) {
 		this.idPerfil = idPerfil;
+	}
+
+	@Column(name = "email", length = 50)
+	public String getEmail() {
+		return this.email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Column(name = "nombre", nullable = false, length = 30)

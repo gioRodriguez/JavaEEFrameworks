@@ -14,7 +14,7 @@ public class AddUserActionTest {
 	@Test
 	public void ExecuteTest() {
 		// Arrange
-		AddUserAction addUserAction = new AddUserAction();
+		UserAddAction addUserAction = new UserAddAction();
 
 		UsersRepository usersRepository = Mockito.mock(UsersRepository.class);
 		Mockito.when(usersRepository.addUser(Mockito.any(User.class)))

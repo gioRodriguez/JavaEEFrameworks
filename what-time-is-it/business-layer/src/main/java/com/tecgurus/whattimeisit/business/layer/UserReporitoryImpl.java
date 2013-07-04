@@ -41,6 +41,13 @@ public class UserReporitoryImpl implements UsersRepository {
 		
 		////TODO: Validar si el usario ya esta registrado
 		return this.usersRepository.addUser(user);
+	}
+
+	@Override
+	@Transactional(readOnly = false)
+	public void queryTest() {
+		// TODO Auto-generated method stub
+		this.usersRepository.queryTest();
 	}	
 
 }

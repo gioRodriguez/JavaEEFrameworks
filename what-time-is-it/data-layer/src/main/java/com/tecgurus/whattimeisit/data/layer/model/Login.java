@@ -1,6 +1,6 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
+// Generated Jul 3, 2013 8:59:44 PM by Hibernate Tools 4.0.0
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -21,30 +21,30 @@ public class Login implements java.io.Serializable {
 
 	private Integer idUsuario;
 	private Perfil perfil;
-	private String nombre;
-	private String apaterno;
 	private String amaterno;
-	private String usuario;
+	private String apaterno;
+	private String nombre;
 	private String password;
+	private String usuario;
 
 	public Login() {
 	}
 
-	public Login(Perfil perfil, String nombre, String usuario, String password) {
+	public Login(Perfil perfil, String nombre, String password, String usuario) {
 		this.perfil = perfil;
 		this.nombre = nombre;
-		this.usuario = usuario;
 		this.password = password;
+		this.usuario = usuario;
 	}
 
-	public Login(Perfil perfil, String nombre, String apaterno,
-			String amaterno, String usuario, String password) {
+	public Login(Perfil perfil, String amaterno, String apaterno,
+			String nombre, String password, String usuario) {
 		this.perfil = perfil;
-		this.nombre = nombre;
-		this.apaterno = apaterno;
 		this.amaterno = amaterno;
-		this.usuario = usuario;
+		this.apaterno = apaterno;
+		this.nombre = nombre;
 		this.password = password;
+		this.usuario = usuario;
 	}
 
 	@Id
@@ -68,13 +68,13 @@ public class Login implements java.io.Serializable {
 		this.perfil = perfil;
 	}
 
-	@Column(name = "nombre", nullable = false, length = 30)
-	public String getNombre() {
-		return this.nombre;
+	@Column(name = "amaterno", length = 30)
+	public String getAmaterno() {
+		return this.amaterno;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setAmaterno(String amaterno) {
+		this.amaterno = amaterno;
 	}
 
 	@Column(name = "apaterno", length = 30)
@@ -86,22 +86,13 @@ public class Login implements java.io.Serializable {
 		this.apaterno = apaterno;
 	}
 
-	@Column(name = "amaterno", length = 30)
-	public String getAmaterno() {
-		return this.amaterno;
+	@Column(name = "nombre", nullable = false, length = 30)
+	public String getNombre() {
+		return this.nombre;
 	}
 
-	public void setAmaterno(String amaterno) {
-		this.amaterno = amaterno;
-	}
-
-	@Column(name = "usuario", nullable = false, length = 10)
-	public String getUsuario() {
-		return this.usuario;
-	}
-
-	public void setUsuario(String usuario) {
-		this.usuario = usuario;
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 	@Column(name = "password", nullable = false, length = 10)
@@ -111,6 +102,15 @@ public class Login implements java.io.Serializable {
 
 	public void setPassword(String password) {
 		this.password = password;
+	}
+
+	@Column(name = "usuario", nullable = false, length = 10)
+	public String getUsuario() {
+		return this.usuario;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
 	}
 
 }

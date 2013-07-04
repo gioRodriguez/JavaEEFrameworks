@@ -4,14 +4,14 @@ import com.opensymphony.xwork2.ModelDriven;
 import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.web.models.UserModel;
 
-public class AddUserAction extends Action implements
+public class UserAddAction extends ActionBase implements
 		ModelDriven<UserModel> {
 
 	private static final long serialVersionUID = 1L;
 
 	private UserModel userModel;	
 
-	public AddUserAction() {
+	public UserAddAction() {
 		this.userModel = new UserModel();
 	}
 

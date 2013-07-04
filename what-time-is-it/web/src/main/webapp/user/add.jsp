@@ -25,23 +25,6 @@
 		<s:submit label="Aceptar"></s:submit>
 	</s:form>
 
-	<div class="vaso">
-		<ul>
-			<li data-contenido="si">contenido</li>
-			<li data-contenido="si">contenido</li>
-			<li data-contenido="si">contenido</li>
-			<li data-contenido="si">contenido</li>
-			<li data-contenido="si">contenido</li>
-		</ul>
-	</div>
-
-	<ul>
-		<li data-artista="Roberto Carlos Jose">track 1</li>
-		<li data-artista="Jose Jose">track 1</li>
-		<li data-artista="Tigres del Norte">track 1</li>
-		<li data-artista="Rigo Tovar">track 1</li>
-	</ul>
-
 	<!--<script type="text/javascript" src="resources/thirdparty/jquery/jquery-1.10.1.js"></script>-->
 	<script
 		src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>

@@ -1,6 +1,6 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
+// Generated Jul 3, 2013 8:59:44 PM by Hibernate Tools 4.0.0
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,17 +17,17 @@ import javax.persistence.Table;
 public class Cuenta implements java.io.Serializable {
 
 	private Integer idCuenta;
-	private int numeroCuenta;
-	private int idTipoCuenta;
 	private int idCliente;
+	private int idTipoCuenta;
+	private int numeroCuenta;
 
 	public Cuenta() {
 	}
 
-	public Cuenta(int numeroCuenta, int idTipoCuenta, int idCliente) {
-		this.numeroCuenta = numeroCuenta;
-		this.idTipoCuenta = idTipoCuenta;
+	public Cuenta(int idCliente, int idTipoCuenta, int numeroCuenta) {
 		this.idCliente = idCliente;
+		this.idTipoCuenta = idTipoCuenta;
+		this.numeroCuenta = numeroCuenta;
 	}
 
 	@Id
@@ -41,13 +41,13 @@ public class Cuenta implements java.io.Serializable {
 		this.idCuenta = idCuenta;
 	}
 
-	@Column(name = "numeroCuenta", nullable = false)
-	public int getNumeroCuenta() {
-		return this.numeroCuenta;
+	@Column(name = "idCliente", nullable = false)
+	public int getIdCliente() {
+		return this.idCliente;
 	}
 
-	public void setNumeroCuenta(int numeroCuenta) {
-		this.numeroCuenta = numeroCuenta;
+	public void setIdCliente(int idCliente) {
+		this.idCliente = idCliente;
 	}
 
 	@Column(name = "idTipoCuenta", nullable = false)
@@ -59,13 +59,13 @@ public class Cuenta implements java.io.Serializable {
 		this.idTipoCuenta = idTipoCuenta;
 	}
 
-	@Column(name = "idCliente", nullable = false)
-	public int getIdCliente() {
-		return this.idCliente;
+	@Column(name = "numeroCuenta", nullable = false)
+	public int getNumeroCuenta() {
+		return this.numeroCuenta;
 	}
 
-	public void setIdCliente(int idCliente) {
-		this.idCliente = idCliente;
+	public void setNumeroCuenta(int numeroCuenta) {
+		this.numeroCuenta = numeroCuenta;
 	}
 
 }

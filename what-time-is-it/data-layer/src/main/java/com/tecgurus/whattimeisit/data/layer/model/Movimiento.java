@@ -1,8 +1,7 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
+// Generated Jul 3, 2013 8:59:44 PM by Hibernate Tools 4.0.0
 
-import java.math.BigDecimal;
 import java.util.Date;
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -22,19 +21,18 @@ public class Movimiento implements java.io.Serializable {
 
 	private Integer idMovimiento;
 	private Date fecha;
-	private BigDecimal monto;
 	private int idCuenta;
 	private int idTipoMovimiento;
+	private int monto;
 
 	public Movimiento() {
 	}
 
-	public Movimiento(Date fecha, BigDecimal monto, int idCuenta,
-			int idTipoMovimiento) {
+	public Movimiento(Date fecha, int idCuenta, int idTipoMovimiento, int monto) {
 		this.fecha = fecha;
-		this.monto = monto;
 		this.idCuenta = idCuenta;
 		this.idTipoMovimiento = idTipoMovimiento;
+		this.monto = monto;
 	}
 
 	@Id
@@ -58,15 +56,6 @@ public class Movimiento implements java.io.Serializable {
 		this.fecha = fecha;
 	}
 
-	@Column(name = "monto", nullable = false, precision = 9)
-	public BigDecimal getMonto() {
-		return this.monto;
-	}
-
-	public void setMonto(BigDecimal monto) {
-		this.monto = monto;
-	}
-
 	@Column(name = "idCuenta", nullable = false)
 	public int getIdCuenta() {
 		return this.idCuenta;
@@ -83,6 +72,15 @@ public class Movimiento implements java.io.Serializable {
 
 	public void setIdTipoMovimiento(int idTipoMovimiento) {
 		this.idTipoMovimiento = idTipoMovimiento;
+	}
+
+	@Column(name = "monto", nullable = false, precision = 9, scale = 0)
+	public int getMonto() {
+		return this.monto;
+	}
+
+	public void setMonto(int monto) {
+		this.monto = monto;
 	}
 
 }

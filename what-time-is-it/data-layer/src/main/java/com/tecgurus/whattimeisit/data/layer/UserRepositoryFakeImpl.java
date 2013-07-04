@@ -56,4 +56,10 @@ public class UserRepositoryFakeImpl implements UsersRepository {
 		return 1;
 	}
 
+	@Override
+	public void queryTest() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }

@@ -5,18 +5,15 @@
 <struts>
 	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
 	<constant name="struts.devMode" value="true" />
+	<constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory" />
 
 	<include file="example.xml" />
 
-	<package name="users" namespace="/users" extends="struts-default">
+	<package name="user" namespace="/user" extends="struts-default">
 
-		<action name="getUserList" class="userListAction">
-			<result>/users/index.jsp</result>
-		</action>
-
-		<action name="addUser" class="addUserAction">
-			<result name="success">/users/addUserSuccess.jsp</result>
-			<result name="input">/users/addUser.jsp</result>
+		<action name="add" class="addUserAction">
+			<result name="success">/user/addSuccess.jsp</result>
+			<result name="input">/user/add.jsp</result>
 		</action>
 	</package>
 

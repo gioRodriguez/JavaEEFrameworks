@@ -1,6 +1,6 @@
 package com.tecgurus.whattimeisit.data.layer.model;
 
-// Generated Jul 1, 2013 8:45:16 PM by Hibernate Tools 4.0.0
+// Generated Jul 3, 2013 8:59:44 PM by Hibernate Tools 4.0.0
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -17,22 +17,22 @@ import javax.persistence.Table;
 public class Cliente implements java.io.Serializable {
 
 	private Integer idCliente;
-	private String nombre;
-	private String apaterno;
 	private String amaterno;
+	private String apaterno;
 	private int edad;
 	private int idBanco;
+	private String nombre;
 
 	public Cliente() {
 	}
 
-	public Cliente(String nombre, String apaterno, String amaterno, int edad,
-			int idBanco) {
-		this.nombre = nombre;
-		this.apaterno = apaterno;
+	public Cliente(String amaterno, String apaterno, int edad, int idBanco,
+			String nombre) {
 		this.amaterno = amaterno;
+		this.apaterno = apaterno;
 		this.edad = edad;
 		this.idBanco = idBanco;
+		this.nombre = nombre;
 	}
 
 	@Id
@@ -46,13 +46,13 @@ public class Cliente implements java.io.Serializable {
 		this.idCliente = idCliente;
 	}
 
-	@Column(name = "nombre", nullable = false, length = 50)
-	public String getNombre() {
-		return this.nombre;
+	@Column(name = "amaterno", nullable = false, length = 50)
+	public String getAmaterno() {
+		return this.amaterno;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setAmaterno(String amaterno) {
+		this.amaterno = amaterno;
 	}
 
 	@Column(name = "apaterno", nullable = false, length = 30)
@@ -62,15 +62,6 @@ public class Cliente implements java.io.Serializable {
 
 	public void setApaterno(String apaterno) {
 		this.apaterno = apaterno;
-	}
-
-	@Column(name = "amaterno", nullable = false, length = 50)
-	public String getAmaterno() {
-		return this.amaterno;
-	}
-
-	public void setAmaterno(String amaterno) {
-		this.amaterno = amaterno;
 	}
 
 	@Column(name = "edad", nullable = false)
@@ -89,6 +80,15 @@ public class Cliente implements java.io.Serializable {
 
 	public void setIdBanco(int idBanco) {
 		this.idBanco = idBanco;
+	}
+
+	@Column(name = "nombre", nullable = false, length = 50)
+	public String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
 	}
 
 }

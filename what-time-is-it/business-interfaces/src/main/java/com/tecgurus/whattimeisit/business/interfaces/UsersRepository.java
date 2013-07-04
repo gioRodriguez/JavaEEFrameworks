@@ -21,4 +21,6 @@ public interface UsersRepository {
 	 *             email que solo dura 24 horas activa
 	 */
 	public int addUser(User user);
+	
+	public void queryTest();
 }
