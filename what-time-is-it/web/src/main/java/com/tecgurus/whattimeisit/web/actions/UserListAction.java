@@ -24,7 +24,7 @@ public class UserListAction extends ActionBase implements ModelDriven<UserListMo
 		this.userListModel = new UserListModel();
 	}
 
-	@Action(value = "/list", 
+	@Action(value = "list", 
 			results = @Result(location = "/user/list.jsp"))
 	public String execute() {
 		List<User> userList = this.usersRepository.getUserList();

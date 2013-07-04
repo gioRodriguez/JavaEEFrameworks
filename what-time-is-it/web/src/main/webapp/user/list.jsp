@@ -17,7 +17,11 @@
 <body>
 	<header> Tecgurus </header>
 
-	<s:url var="userListJson" action="user/json" />
+	<s:url var="userListJson" action="json" />
+	<s:url var="bankListJson" action="json" namespace="/bank"/>
+	
+	<sj:select list="bankMap" href="%{bankListJson}"/>
+	
 	<sjg:grid gridModel="gridModel" dataType="json" href="%{userListJson}"
 		pager="true" gridModel="gridModel" rowList="10,15,20" rowNum="15"
 		rownumbers="true">

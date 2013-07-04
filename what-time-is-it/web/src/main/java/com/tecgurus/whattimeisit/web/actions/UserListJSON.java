@@ -12,10 +12,6 @@ import com.tecgurus.whattimeisit.business.entities.User;
 @ParentPackage("json-default")
 @Namespace("/user")
 public class UserListJSON extends ActionBase {
-
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	private List<User> gridModel;
@@ -27,7 +23,7 @@ public class UserListJSON extends ActionBase {
 	private int records;
 
 	@Override
-	@Action(value = "/json", results = @Result(type = "json"))
+	@Action(value = "json", results = { @Result(type = "json") })
 	public String execute() {
 		int from = this.getRows() * this.getPage() - this.getRows();
 		records = this.usersRepository.getUserCount();

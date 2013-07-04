@@ -17,7 +17,7 @@
 
 	<s:form method="post">
 
-		<sj:textfield name="userFirstName" id="userNameTxt" label=""/>
+		<s:textfield name="userFirstName" id="userNameTxt" label=""/>
 
 		<s:textfield id="userEmailTxt" name="userEmail"
 			label="Email de usuario" />

@@ -89,9 +89,10 @@ public class UserListJSONTest {
 		int total = RECORDS / ROWS;
 		
 		// Act
-		userListJSON.execute();
+		String actual = userListJSON.execute();
 		
 		// Assert
+		assertEquals("success", actual);
 		assertNotNull(userListJSON.getGridModel());
 		assertArrayEquals(this.userList.toArray(), userListJSON.getGridModel().toArray());
 		assertTrue(orderAscCaptor.getValue());
