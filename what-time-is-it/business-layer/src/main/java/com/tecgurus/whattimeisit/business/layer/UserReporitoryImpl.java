@@ -31,13 +31,7 @@ public class UserReporitoryImpl implements UsersRepository {
 	@Override
 	@Transactional(rollbackFor = Exception.class)
 	public int addUser(User user) {
-		////TODO: verificar si el usuario en session tiene
-		////permisos de aniadir nuevos usuarios
-		
-		////Validar el user para no romper la BD
-		
-		////Grabar en la bitacora que se ha agregado
-		////un nuevo usuario
+		////TODO: verificar el usuario en session
 		
 		////TODO: Validar si el usario ya esta registrado
 		return this.usersRepository.addUser(user);
@@ -48,6 +42,17 @@ public class UserReporitoryImpl implements UsersRepository {
 	public void queryTest() {
 		// TODO Auto-generated method stub
 		this.usersRepository.queryTest();
+	}
+
+	@Override
+	public List<User> getUserList(int from, int rows, String orderBy,
+			boolean asc) {		
+		return this.usersRepository.getUserList(from, rows, orderBy, asc);
+	}
+
+	@Override
+	public int getUserCount() {
+		return this.usersRepository.getUserCount();
 	}	
 
 }

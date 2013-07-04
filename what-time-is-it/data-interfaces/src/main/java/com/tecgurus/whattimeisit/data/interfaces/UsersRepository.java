@@ -11,4 +11,8 @@ public interface UsersRepository {
 	public int addUser(User user);
 	
 	public void queryTest();
+
+	public List<User> getUserList(int from, int rows, String orderBy, boolean asc);
+
+	public int getUserCount();
 }

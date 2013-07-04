@@ -9,7 +9,7 @@ import com.tecgurus.whattimeisit.business.entities.User;
 import com.tecgurus.whattimeisit.business.interfaces.UsersRepository;
 import com.tecgurus.whattimeisit.web.models.UserModel;
 
-public class AddUserActionTest {
+public class UserAddActionTest {
 
 	@Test
 	public void ExecuteTest() {

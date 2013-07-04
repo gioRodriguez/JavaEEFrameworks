@@ -27,31 +27,8 @@ public class UserAddAction extends ActionBase implements
 
 	private User createUser() {
 		User newUser = new User();
-		newUser.setUserName(userModel.getUserFirstName() + userModel.getUserLastName());
+		newUser.setUserName(userModel.getUserFirstName());
 		newUser.setUserEmail(userModel.getUserEmail());
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
-		// /code
 		
 		return newUser;
 	}

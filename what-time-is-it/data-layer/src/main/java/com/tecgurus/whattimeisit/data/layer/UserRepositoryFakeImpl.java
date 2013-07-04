@@ -62,4 +62,17 @@ public class UserRepositoryFakeImpl implements UsersRepository {
 		
 	}
 
+	@Override
+	public List<User> getUserList(int from, int rows, String orderBy,
+			boolean asc) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public int getUserCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
 }

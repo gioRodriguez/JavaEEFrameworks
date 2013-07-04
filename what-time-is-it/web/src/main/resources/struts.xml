@@ -13,7 +13,7 @@
 
 		<action name="add" class="addUserAction">
 			<result name="success">/user/addSuccess.jsp</result>
-			<result name="input">/user/add.jsp</result>
+			<result name="input">/user/addUI.jsp</result>
 		</action>
 	</package>
 
