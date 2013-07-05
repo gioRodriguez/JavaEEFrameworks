@@ -28,6 +28,19 @@
 		<sjg:gridColumn name="userEmail" title="userEmail" />
 		<sjg:gridColumn name="userEmail" title="userName" />
 	</sjg:grid>
+	
+	<sjg:grid 
+		gridModel="gridModel" 
+		dataType="json" 
+		href="%{userListJson}"
+		rowList="5, 10, 15"
+		rowNum="15"
+		rownumbers="true" 
+		multiselect="true"
+		pager="true">
+		<sjg:gridColumn name="userEmail" title="userEmail"/>
+		<sjg:gridColumn name="userName" title="userName"></sjg:gridColumn>
+	</sjg:grid>
 
 
 

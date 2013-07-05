@@ -45,12 +45,14 @@ public class UserReporitoryImpl implements UsersRepository {
 	}
 
 	@Override
+	@Transactional
 	public List<User> getUserList(int from, int rows, String orderBy,
 			boolean asc) {		
 		return this.usersRepository.getUserList(from, rows, orderBy, asc);
 	}
 
 	@Override
+	@Transactional
 	public int getUserCount() {
 		return this.usersRepository.getUserCount();
 	}	

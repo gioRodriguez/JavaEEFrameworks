@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.hibernate.Criteria;
 import org.hibernate.SessionFactory;
+import org.hibernate.criterion.Projections;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -67,30 +68,33 @@ public class UserRepositoryImpl implements UsersRepository {
 
 	@Override
 	public List<User> getUserList(int from, int rows, String orderBy,
-			boolean asc) {
+			boolean asc) {		
 		List<User> userList = new ArrayList<User>();
-		User user = new User();
-		user.setUserEmail("mail@mail.com");
-		user.setUserName("userName");
 		
-		User user2 = new User();
-		user2.setUserEmail("mail2@mail.com");
-		user2.setUserName("userName2");
+		Criteria criteria = this.sessionFactory.getCurrentSession()
+				.createCriteria(Perfil.class);
 		
-		User user3 = new User();
-		user3.setUserEmail("mail3@mail.com");
-		user3.setUserName("userName3");
+		criteria.setFirstResult(from);
+		criteria.setMaxResults(rows);
 		
-		userList.add(user);
-		userList.add(user2);
-		userList.add(user3);
+		List<Perfil> perfiles = criteria.list();
+		
+		System.out.print(perfiles.size());
+		
+		for (Perfil perfil : perfiles) {			
+			User user = new User();
+			user.setUserName(perfil.getNombre());
+			user.setUserEmail(perfil.getEmail());
+			userList.add(user);
+		}
 		
 		return userList;
 	}
 
 	@Override
-	public int getUserCount() {
-		return 3;
+	public int getUserCount() {;
+		
+		return 36;
 	}
 }
 
