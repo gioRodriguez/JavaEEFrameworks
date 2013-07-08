@@ -20,30 +20,37 @@
 	<s:url var="userListJson" action="json" />
 	<s:url var="bankListJson" action="json" namespace="/bank"/>
 	
-	<sj:select list="bankMap" href="%{bankListJson}"/>
+	<sj:select list="bankMap" href="%{bankListJson}" id="bankMap"/>
 	
-	<sjg:grid gridModel="gridModel" dataType="json" href="%{userListJson}"
-		pager="true" gridModel="gridModel" rowList="10,15,20" rowNum="15"
-		rownumbers="true">
-		<sjg:gridColumn name="userEmail" title="userEmail" />
-		<sjg:gridColumn name="userEmail" title="userName" />
-	</sjg:grid>
-	
-	<sjg:grid 
+	<sjg:grid id="userGrid"
 		gridModel="gridModel" 
 		dataType="json" 
-		href="%{userListJson}"
+		href="%{userListJson}"			
 		rowList="5, 10, 15"
 		rowNum="15"
 		rownumbers="true" 
 		multiselect="true"
 		pager="true">
-		<sjg:gridColumn name="userEmail" title="userEmail"/>
-		<sjg:gridColumn name="userName" title="userName"></sjg:gridColumn>
+		<sjg:gridColumn name="userEmail" title="userEmail" />
+		<sjg:gridColumn name="userName" title="userName" />
 	</sjg:grid>
 
-
-
 	<footer>saludos a todos</footer>
+	<script type="text/javascript">
+	function getBankSelectedId(){
+		var bankSelected = $('#bankMap option:selected')[0];
+		var bankId = $(bankSelected) && $(bankSelected).attr('value');
+		return bankId;
+	}
+	
+	$('#bankMap').change(function(){
+		var bankId = getBankSelectedId();
+		var oldUrl = $('#userGrid').jqGrid('getGridParam', 'url');
+		var newUrl = oldUrl + $.param({'bankId':bankId});
+		
+		$('#userGrid').jqGrid('setGridParam', { url:newUrl });
+		$("#userGrid").trigger("reloadGrid"); 
+	});
+	</script>
 </body>
 </html>

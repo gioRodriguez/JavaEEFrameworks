@@ -18,29 +18,28 @@ import com.tecgurus.whattimeisit.data.layer.model.Perfil;
 public class UserRepositoryImpl implements UsersRepository {
 
 	private SessionFactory sessionFactory;
-	
-	@Autowired	
-	public UserRepositoryImpl(SessionFactory sessionFactory){
+
+	@Autowired
+	public UserRepositoryImpl(SessionFactory sessionFactory) {
 		this.sessionFactory = sessionFactory;
 	}
 
 	@Override
 	public List<User> getUserList() {
-		Criteria criteria = sessionFactory
-				.getCurrentSession()
-				.createCriteria(Perfil.class);
-		
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(
+				Perfil.class);
+
 		List<Perfil> perfiles = criteria.list();
-		
+
 		List<User> users = new ArrayList<User>();
 		for (Perfil perfil : perfiles) {
 			User user = new User();
 			user.setUserEmail(perfil.getEmail());
 			user.setUserName(perfil.getNombre());
-			
+
 			users.add(user);
 		}
-		
+
 		return users;
 	}
 
@@ -49,52 +48,52 @@ public class UserRepositoryImpl implements UsersRepository {
 		Perfil perfil = new Perfil();
 		perfil.setNombre(user.getUserName());
 		perfil.setEmail(user.getUserEmail());
-		
-		Integer userId = (Integer) sessionFactory
-				.getCurrentSession().save(perfil); 
-		
+
+		Integer userId = (Integer) sessionFactory.getCurrentSession().save(
+				perfil);
+
 		return userId;
 	}
 
 	@Override
 	public void queryTest() {
-		Criteria criteria = sessionFactory
-				.getCurrentSession()
-				.createCriteria(Cuenta.class);
-		
-		
+		Criteria criteria = sessionFactory.getCurrentSession().createCriteria(
+				Cuenta.class);
+
 		criteria.list();
 	}
 
 	@Override
 	public List<User> getUserList(int from, int rows, String orderBy,
-			boolean asc) {		
+			boolean asc) {
 		List<User> userList = new ArrayList<User>();
-		
+
 		Criteria criteria = this.sessionFactory.getCurrentSession()
 				.createCriteria(Perfil.class);
-		
+
 		criteria.setFirstResult(from);
 		criteria.setMaxResults(rows);
-		
+
 		List<Perfil> perfiles = criteria.list();
-		
+
 		System.out.print(perfiles.size());
-		
-		for (Perfil perfil : perfiles) {			
+
+		for (Perfil perfil : perfiles) {
 			User user = new User();
 			user.setUserName(perfil.getNombre());
 			user.setUserEmail(perfil.getEmail());
 			userList.add(user);
 		}
-		
+
 		return userList;
 	}
 
 	@Override
-	public int getUserCount() {;
-		
-		return 36;
+	public int getUserCount() {		
+		Criteria criteria = this.sessionFactory.getCurrentSession()
+				.createCriteria(Perfil.class);
+
+		return ((Number) criteria.setProjection(Projections.rowCount())
+				.uniqueResult()).intValue();
 	}
 }
-

@@ -20,6 +20,7 @@ public class UserListJSON extends ActionBase {
 	private String sidx;
 	private String sord;
 	private int records;
+	private int bankId;
 
 	@Override
 	@Action(value = "json", results = { @Result(type = "json") })
@@ -82,6 +83,14 @@ public class UserListJSON extends ActionBase {
 
 	public void setRecords(int records) {
 		this.records = records;
+	}
+
+	public int getBankId() {
+		return bankId;
+	}
+
+	public void setBankId(int bankId) {
+		this.bankId = bankId;
 	}
 
 }
